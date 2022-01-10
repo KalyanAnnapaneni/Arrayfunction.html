@@ -1,0 +1,21 @@
+<html>
+<title>js</title>
+
+<body>
+    <script>
+        function asc() {
+            let a = ["html", "css", "javascript", "node"]
+            let temp = 0;
+            for (var j = 0; j < a.length; j++) {
+                for (var k = j + 1; k < a.length; k++) {
+                    if (a[j] < a[k]) {
+                        temp = a[j];
+                        a[j] = a[k];
+                        a[k] = temp;
+                    }
+                }
+            } document.write(a + " , ");
+        } asc()
+    </script>
+</body>
+

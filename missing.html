@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <title>
+        Array
+    </title>
+</body>
+<script>
+    function Missing_Elements() {
+        let a = Number(prompt("Enter Range"))
+        let num = Number(prompt("Enter Array Length"));
+
+        var arr1 = [];
+        var arr2 = [];
+        var arr3 = [];
+
+        for (i = 1; i <= num; i++) {
+
+            arr1.push(Number(prompt("enter array elements")));
+        }
+        for (j = 1; j <= a; j++) {
+
+            arr2.push(j);
+        }
+
+        for (var k = 0; k <= arr2.length; k++) {
+            var count = 1;
+            for (var l = 0; l <= arr1.length; l++) {
+                if (arr2[k] == arr1[l]) {
+
+                    count--;
+                }
+
+            }
+            if ((count == 1) && (arr2[k] <= a)) {
+
+                arr3.push(arr2[k])
+
+            }
+        }
+
+        document.write(arr3);
+
+    }
+    Missing_Elements()
+</script>
+
+</html>
+</script>
+</body>
+
+</html>

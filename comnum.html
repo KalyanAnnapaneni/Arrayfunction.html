@@ -1,0 +1,32 @@
+<html>
+<title>numbers</title>
+
+<body>
+    <script>
+        function com() {
+            // a values
+            let num = Number(prompt("enter the length"));
+            let a = []
+            for (var i = 0; i <= num; i++) {
+                a.push(Number(prompt("enter the elements")));
+            }
+            //b values
+            let num = Number(prompt("enter the length"));
+            let b = []
+            for (var i = 0; i <= num; i++) {
+                b.push(Number(prompt("enter the elements")));
+            }
+            
+            for (var i = 0; i < a.length; i++) {
+                for (var j = 0; j < b.length; j++) {
+                    if (a[i] == b[j]) {
+                        document.write(a[i] + "</br>") 
+                    }
+                }
+            } 
+
+        } com()
+    </script>
+</body>
+
+</html>

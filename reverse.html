@@ -1,0 +1,23 @@
+<html>
+<title>reverse</title>
+
+<body>
+    <script>
+        function reverse() {
+            let num = Number(prompt("enter a length"));
+            let a = []
+            for (var i = 1; i <= num; i++) {
+                a.push(Number(prompt("Enter the elements")));
+            }
+
+            let b = []
+            for (var j = a.length - 1; j >= 0; j--) {
+                b.push(a[j]);
+            }
+            document.write(b);
+
+        } reverse()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+<title>js</title>
+
+<body>
+    <script>
+        function left() {
+            let num = Number(prompt("Enter the length"));
+            let a = []
+            for (var i = 0; i < num; i++) {
+                a.push(Number(prompt("Enter the elements")));
+            }
+            let n = 2;
+            let empty = []
+            for (var i = n; i < a.length; i++) {
+                empty.push(a[i]);
+            }
+            for (var j = 0; j < a.length - (n + 1); j++) {
+                empty.push(a[j]);
+            }
+            document.write(empty)
+
+        } left()
+    </script>
+</body>
+
+</html>

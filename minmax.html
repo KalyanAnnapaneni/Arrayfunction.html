@@ -1,0 +1,33 @@
+<html>
+<title>array</title>
+
+<body>
+    <script>
+        function array() {
+            let num = Number(prompt("enter the length"));
+            let a = []
+            for (var i = 1; i <= num; i++) {
+                a.push(Number(prompt("enter the elements")));
+            }
+            //maximum
+            let max = a[0]
+            document.write ("maximum number of " + a + " is :")
+            for (var j = 0; j < a.length; j++) {
+                if (a[j] > max) {
+                    max = a[j];
+                }
+            } document.write(max + " </br>");
+//minimum
+            document.write ("minimum number of " + a + " is :")
+            let min = a[0]
+            for (var k = 0; k < a.length; k++) {
+                if (a[k] < min) {
+                    min = a[k];
+                }
+            } document.write(min);
+
+        } array()
+    </script>
+</body>
+
+</html>

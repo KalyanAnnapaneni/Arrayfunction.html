@@ -1,0 +1,31 @@
+<html>
+<title>js</title>
+
+<body>
+    <script>
+        function non() {
+            let num = Number(prompt("enter the length"));
+            let a = []
+            let empty = []
+            let temp = 0;
+            for (var i = 1; i <= num; i++) {
+                a.push(Number(prompt("enter the elements")));
+            }
+            document.write("non repeated numbers are :")
+            for (var j = 0; j < num; j++) {
+                let count = 0;
+                for (var k = 0; k < num; k++) {
+                    if (a[j] == a[k]) {
+                        count++;
+
+                    }
+                } if (count == 1) {
+                    empty.push(a[j]);
+                }
+            } document.write(empty[0] + "</br>");
+            document.write(empty[1]);
+        } non()
+    </script>
+</body>
+
+</html>

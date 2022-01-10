@@ -1,0 +1,27 @@
+<html>
+<title>even</title>
+
+<body>
+    <script>function even() {
+            let num = Number(prompt("enter the length"));
+            let a = []
+            for (var i = 0; i <= num; i++) {
+                a.push(Number(prompt("enter the elements")));
+            }
+            let even = []
+            let odd = []
+            document.write("Even numbers in array are :" + " " + "</br>")
+            for (var i = 0; i <= a.length; i++) {
+                if (a[i] % 2 == 0) {
+                    even.push(a[i]);
+                } else {
+                    odd.push(a[i]);
+                }
+            }
+            document.write(even + "</br>");
+            document.write(odd);
+        } even()
+    </script>
+</body>
+
+</html>

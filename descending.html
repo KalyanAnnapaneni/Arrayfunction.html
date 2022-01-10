@@ -1,0 +1,29 @@
+<html>
+<title>ascending</title>
+
+<body>
+    <script>
+        function asc() {
+            let num = Number(prompt("enter length"));
+            let a = []
+            let temp = 0;
+            for (var i = 1; i <= num; i++) {
+                a.push(Number(prompt("Enter the numbers")));
+            }
+            for (var j = 0; j < a.length; j++) {
+                for (var k = j; k < a.length; k++) {
+                    if (a[j] < a[k]) {
+                        temp = a[j];
+                        a[j] = a[k];
+                        a[k] = temp;
+                    }
+                }
+            }
+
+            document.write(a + " , ");
+
+        } asc()
+    </script>
+</body>
+
+</html>
